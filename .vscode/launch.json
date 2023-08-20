@@ -4,6 +4,7 @@
     {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
+      "type": "cppdbg",
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
