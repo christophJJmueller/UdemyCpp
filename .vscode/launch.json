@@ -4,13 +4,12 @@
     {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
-      "type": "cppdbg",
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/much1/Documents/ComputerVision/UdemyCPP/UdemyCpp/01_Intro",
-      "program": "c:/Users/much1/Documents/ComputerVision/UdemyCPP/UdemyCpp/01_Intro/build/Debug/outDebug",
+      "cwd": "c:/Users/much1/Documents/ComputerVision/UdemyCPP/UdemyCpp/02_Basics",
+      "program": "c:/Users/much1/Documents/ComputerVision/UdemyCPP/UdemyCpp/02_Basics/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
