@@ -1,0 +1,8 @@
+Dateiarten
+
+Source Datei -> .cc / .cpp -> Definition
+Header Datei -> .h / .hpp -> Deklaration
+    Auflistung, was der User aus einer bestimmten Datei verwenden kann
+        Funktionsköpfe (Parameter, Return Type, Funktionsname)
+
+Source- und Header-Datei bilden eine "Translation Unit" / "Compilation Unit"
