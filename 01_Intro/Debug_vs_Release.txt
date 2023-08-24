@@ -1,5 +1,7 @@
 Compile in Debug Mode != Debugging
 
 Debug <> Release
-- Debug: während Development
-- Release: fertiges Projekt an Kunden
+- Debug: während Development -> Compiler im Level O0
+- Release: fertiges Projekt an Kunden -> Compiler im Level O3 -> mehr Optimierungen bzgl. Performance
+
+https://godbolt.org/

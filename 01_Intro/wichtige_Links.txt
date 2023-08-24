@@ -8,3 +8,9 @@ https://www.rapidtables.com/code/text/ascii-table.html
 https://en.wikipedia.org/wiki/Single-precision_floating-point_format
 https://en.wikipedia.org/wiki/Double-precision_floating-point_format
 https://en.wikipedia.org/wiki/Quadruple-precision_floating-point_format
+
+https://clang.llvm.org/docs/ClangFormat.html
+
+https://godbolt.org/
+
+https://clang.llvm.org/extra/clang-tidy/
