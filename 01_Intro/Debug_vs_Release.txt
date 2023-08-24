@@ -1,0 +1,5 @@
+Compile in Debug Mode != Debugging
+
+Debug <> Release
+- Debug: während Development
+- Release: fertiges Projekt an Kunden
