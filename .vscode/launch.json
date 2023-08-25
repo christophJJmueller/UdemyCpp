@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/much1/Documents/ComputerVision/UdemyCPP/UdemyCpp/02_Basics/2_4/GuessingGame",
-      "program": "c:/Users/much1/Documents/ComputerVision/UdemyCPP/UdemyCpp/02_Basics/2_4/GuessingGame/build/Debug/outDebug",
+      "cwd": "c:/Users/much1/Documents/ComputerVision/UdemyCPP/UdemyCpp/ComputerGame3/3_ownSolution",
+      "program": "c:/Users/much1/Documents/ComputerVision/UdemyCPP/UdemyCpp/ComputerGame3/3_ownSolution/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
