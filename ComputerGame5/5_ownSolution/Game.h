@@ -2,14 +2,6 @@
 
 #include <cstdint>
 
-bool is_finished(const std::uint32_t player);
-
-void print_game_state(const std::uint32_t player);
-
-void execute_move(std::uint32_t &player, const char move);
-
-void game();
-
 struct Coordinate
 {
     std::uint32_t x;
@@ -24,3 +16,11 @@ enum class UserInput
     UP = 'w',
     DOWN = 's',
 };
+
+bool is_finished(const Coordinate &player);
+
+void print_game_state(const Coordinate &player);
+
+void execute_move(Coordinate &player, const UserInput move);
+
+void game();
