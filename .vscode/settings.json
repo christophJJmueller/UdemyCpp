@@ -89,7 +89,16 @@
     "streambuf": "cpp",
     "thread": "cpp",
     "typeinfo": "cpp",
-    "valarray": "cpp"
+    "valarray": "cpp",
+    "any": "cpp",
+    "bitset": "cpp",
+    "list": "cpp",
+    "set": "cpp",
+    "optional": "cpp",
+    "future": "cpp",
+    "ranges": "cpp",
+    "span": "cpp",
+    "variant": "cpp"
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
