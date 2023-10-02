@@ -37,7 +37,7 @@ int main()
     p += 2;
     std::cout << *p << std::endl;
 
-    //front gibt eine Referenz des letzten Elements des Vektors zurück
+    //front gibt eine Referenz des ersten Elements des Vektors zurück
     auto f1 = myvector.front();
     auto &f2 = myvector.front();
     std::cout << "f1: " << f1 << std::endl;
@@ -52,7 +52,6 @@ int main()
     std::cout << myvector[0] << std::endl;
 
     //back gibt eine Referenz des letzten Elements des Vektors zurück
-    //front gibt eine Referenz zum ersten Element des Vektors zurück
     auto &b = myvector.back();
     std::cout << "b: " << b << std::endl;
     //f1 ist Kopie des ersten Werts -> Vektor unverändert

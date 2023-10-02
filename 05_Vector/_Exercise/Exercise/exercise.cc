@@ -7,31 +7,23 @@
 // Exercise 2
 VectorT max_row_values(MatrixT &matrix)
 {
-    auto row_max_vec = VectorT(matrix.size(), 0.0);
-    if (!matrix.size() || !matrix[0].size())
-        return row_max_vec;
+    auto max_row_val = VectorT(3, 0.0);
 
-    for (std::size_t i = 0; i != matrix.size(); ++i)
+    for (std::size_t i = 0; auto col : matrix)
     {
-        auto act_row_max = matrix[i][0];
-
-        for (std::size_t j = 1; j != matrix[i].size(); ++j)
-        {
-            if (matrix[i][j] > act_row_max)
-            {
-                act_row_max = matrix[i][j];
-            }
-        }
-
-        row_max_vec[i] = act_row_max;
+        std::sort(col.begin(), col.end());
+        max_row_val[i] = col.back();
+        i++;
     }
 
-    return row_max_vec;
+    return max_row_val;
 }
 
 // Exercise 3
 ValueT sort_and_max(VectorT &vec)
 {
+    //auto max_vec_val = 0.0;
+
     std::sort(vec.begin(), vec.end());
 
     return vec.back();
