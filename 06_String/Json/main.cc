@@ -17,7 +17,7 @@ int main()
     data["configurations"][0]["cppStandard"] = "c++23";
 
     auto ofs = std::ofstream{"c_cpp_properties_edited.json"};
-    ofs << std::setw(4) << data;
+    ofs << std::setw(4) << data; //std::setw(4) erledigt die Formatierung
 
     return 0;
 }
