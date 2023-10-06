@@ -289,5 +289,6 @@
   "doxdocgen.generic.returnTemplate": "@return",
   "doxdocgen.generic.includeTypeAtReturn": false,
   "C_Cpp_Runner.msvcBatchPath": "",
-  "C_Cpp_Runner.msvcSecureNoWarnings": false
+  "C_Cpp_Runner.msvcSecureNoWarnings": false,
+  "workbench.editor.empty.hint": "hidden"
 }
