@@ -12,7 +12,8 @@ int main()
     // Exercise 1
     auto friends = Friends{};
 
-    // ...
+    friends["Max"] = {28, 90};
+    friends["Maria"] = {25, 60};
 
     // Exercise 2
     const auto oldest_friend = get_oldest_friend(friends);
