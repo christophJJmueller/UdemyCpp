@@ -8,14 +8,14 @@
 
 #include "exercise.h"
 
-using ClockType = std::chrono::steady_clock;
+using ClockType = std::chrono::high_resolution_clock;
 
 int main()
 {
     auto gen = std::random_device{};
     auto dist = std::bernoulli_distribution(0.5);
 
-    auto target = BinaryArray(20, false);
+    auto target = BinaryArray(10, false);
     std::generate(target.begin(), target.end(), [&] { return dist(gen); });
 
     auto input = BinaryArray(target.begin(), target.end());
@@ -38,10 +38,10 @@ int main()
     const auto result_exercise1 = shuffle_till_equal(target, input);
     auto end = ClockType::now();
     auto elapsed_milliseconds =
-        std::chrono::duration_cast<std::chrono::microseconds>(end - start)
+        std::chrono::duration_cast<std::chrono::nanoseconds>(end - start)
             .count() /
         1000.0;
-    std::cout << '\n' << "Time for exercise 1 in ms: " << elapsed_milliseconds;
+    std::cout << '\n' << "Time for exercise 1 in ns: " << elapsed_milliseconds;
     const auto is_equal2 = std::equal(result_exercise1.begin(),
                                       result_exercise1.end(),
                                       target.begin());
@@ -53,10 +53,10 @@ int main()
     const auto result_exercise2 = smart_shuffle_till_equal(target, input);
     end = ClockType::now();
     elapsed_milliseconds =
-        std::chrono::duration_cast<std::chrono::microseconds>(end - start)
+        std::chrono::duration_cast<std::chrono::nanoseconds>(end - start)
             .count() /
         1000.0;
-    std::cout << '\n' << "Time for exercise 2 in ms: " << elapsed_milliseconds;
+    std::cout << '\n' << "Time for exercise 2 in ns: " << elapsed_milliseconds;
     const auto is_equal3 = std::equal(result_exercise2.begin(),
                                       result_exercise2.end(),
                                       target.begin());

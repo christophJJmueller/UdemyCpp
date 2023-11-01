@@ -28,7 +28,7 @@ int main()
 
     // Exercise 1
     const auto has_no_even =
-        std::none_of(my_vector.begin(), my_vector.end(), ...);
+        std::none_of(my_vector.begin(), my_vector.end(), [](const auto value){return (value % 2) != 0;});
 
     if (has_no_even)
     {
@@ -40,7 +40,7 @@ int main()
     }
 
     // Exercise 2
-    std::transform(my_vector.begin(), my_vector.end(), my_result.begin(), ...);
+    std::transform(my_vector.begin(), my_vector.end(), my_result.begin(), [](const auto value){return value * value;});
 
     for (const auto &val : my_result)
     {

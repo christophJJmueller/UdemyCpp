@@ -1,0 +1,4 @@
+https://en.cppreference.com/w/cpp/algorithm
+https://en.cppreference.com/w/cpp/header/algorithm
+https://en.cppreference.com/w/cpp/numeric
+https://en.cppreference.com/w/cpp/header/numeric
