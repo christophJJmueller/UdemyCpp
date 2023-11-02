@@ -4,6 +4,9 @@
 
 #include "Agent.h"
 
+//Wenn in einer Elternklasse mind. eine virtuelle Funktion vorhanden ist,
+//muss ein virtueller Destruktor vorhanden sein!
+
 void printAllAgents(const std::vector<Agent *> &agents)
 {
     for (const auto agent : agents)

@@ -8,6 +8,13 @@
 // override
 // final
 
+// Sobald eine abstrakte, virtuelle Funktion in einer Klasse vorhanden ist,
+// können wir kein Objekt der Klasse mehr erstellen!
+// "Schablone" kann nur in Kinderklassen verwendet werden
+
+// Use-Case: Pflicht für Kinderklassen, eine Methode zu implementieren.
+// Details werden in der Kinderklasse definiert.
+
 class Agent
 {
 public:
@@ -24,6 +31,7 @@ public:
 
     virtual ~Agent() = default;
 
+    //= 0 : abstracte Methode; kann nur bei virtuellen Funktionen angegeben werden!
     virtual void print_agent_data() const = 0;
 
 protected:

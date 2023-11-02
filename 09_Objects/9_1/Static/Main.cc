@@ -11,7 +11,7 @@ int main()
     std::cout << c1.compute_area() << '\n';
 
     std::cout << c1.get_pi() << '\n';
-    std::cout << Circle::get_pi() << '\n';
+    std::cout << Circle::get_pi() << '\n'; //empfehlenswert bei static-Methoden
 
     return 0;
 }

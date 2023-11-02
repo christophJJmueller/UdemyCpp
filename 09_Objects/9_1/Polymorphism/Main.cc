@@ -18,6 +18,7 @@ int main()
     Player player1("P1", 1, 250, 55);
     NPC npc1("N1", 2, 235, 41);
 
+    //Agent * : Polymorphismus funktioniert nur, wenn die Variablen Pointer sind!
     const auto agents = std::vector<Agent *>{&agent1, &player1, &npc1};
     printAllAgents(agents);
 

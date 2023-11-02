@@ -16,9 +16,11 @@ public:
 
     float compute_area() const
     {
-        return Circle::PI * Circle::PI * m_radius;
+        return Circle::PI * m_radius * m_radius;
     }
 
+    //static-Keyword nur bei Deklaration in Header-Datei verwenden
+    //Definition in Source-Datei: Circle::get_pi()
     static float get_pi()
     {
         return Circle::PI;
@@ -26,5 +28,5 @@ public:
 
 private:
     float m_radius;
-    static constexpr auto PI = 3.14159F;
+    static constexpr auto PI = 3.14159F; //static: allgemeingültiger Wert für jede Instanz!
 };

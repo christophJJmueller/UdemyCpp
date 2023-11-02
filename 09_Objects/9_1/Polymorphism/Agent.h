@@ -20,6 +20,7 @@ public:
         std::cout << "Agent Destructor!" << '\n';
     }
 
+    //virtual erlaubt den Kinder-Klassen, die Funktion "anzupassen" / zu überschreiben
     virtual void print_agent_data() const
     {
         std::cout << "Agent hp: " << m_hp << ", energy: " << m_energy << '\n';
@@ -49,6 +50,7 @@ public:
         std::cout << "Player Destructor!" << '\n';
     }
 
+    //"override" zeigt, dass das Überschreiben bewusst gemacht ist
     void print_agent_data() const override
     {
         std::cout << "Player hp: " << m_hp << ", energy: " << m_energy << '\n';
