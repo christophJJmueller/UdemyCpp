@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/much1/Documents/ComputerVision/UdemyCPP/UdemyCpp/09_Objects/9_1/Inheritance/_Start",
-      "program": "c:/Users/much1/Documents/ComputerVision/UdemyCPP/UdemyCpp/09_Objects/9_1/Inheritance/_Start/build/Debug/outDebug",
+      "cwd": "c:/Users/much1/Documents/ComputerVision/UdemyCPP/UdemyCpp/09_Objects/9_1/UML/_Start",
+      "program": "c:/Users/much1/Documents/ComputerVision/UdemyCPP/UdemyCpp/09_Objects/9_1/UML/_Start/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
