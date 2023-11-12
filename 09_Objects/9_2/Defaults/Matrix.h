@@ -6,7 +6,7 @@ class Matrix
 public:
     Matrix();
     Matrix(const T &A, const T &B, const T &C, const T &D);
-    ~Matrix() noexcept = default;
+    ~Matrix() noexcept = default; //noexcept: Aufruf kann keine Exception werfen!
 
     Matrix(const Matrix &other) = default;
     Matrix &operator=(const Matrix &other) = default;

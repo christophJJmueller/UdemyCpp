@@ -150,6 +150,7 @@ DynamicArray<T>::DynamicArray(DynamicArray &&other) noexcept
     : m_length(std::move(other.m_length)),
       m_capacity(std::move(other.m_capacity)), m_data(std::move(other.m_data))
 {
+    //nach "std::move" wird das other-Objekt auf default zurückgesetzt
     other.m_length = 0;
     other.m_capacity = 0;
     other.m_data = nullptr;

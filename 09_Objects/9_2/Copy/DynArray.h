@@ -76,10 +76,13 @@ DynamicArray<T>::~DynamicArray()
  *
  * @param other other DynmaicArray
  */
+
+//Copy Constructor wird immer aufgerufen, um eine neue Instanz zu erstellen!
+
 template <typename T>
 DynamicArray<T>::DynamicArray(const DynamicArray<T> &other)
     : m_length(other.m_length), m_capacity(other.m_capacity),
-      m_data(other.m_length > 0 ? new T[other.m_length] : nullptr)
+      m_data(other.m_length > 0 ? new T[other.m_length] : nullptr) //m_data(other.m_data) wäre falsch, da dabei kein neuer Heap-Speicher allociert wird, sondern der von &other verwendet wird
 {
     for (std::size_t i = 0; i != m_length; ++i)
     {
@@ -96,10 +99,13 @@ DynamicArray<T>::DynamicArray(const DynamicArray<T> &other)
  * @param other DynamicArray rhs of the operator.
  * @return DynamicArray&
  */
+
+//Copy assignment operator wird immer aufgerufen, wenn die Werte eine bereits bestehenden Instanz aktualisiert / verändert werden sollen.
+
 template <typename T>
 DynamicArray<T> &DynamicArray<T>::operator=(const DynamicArray<T> &other)
 {
-    if (this != &other)
+    if (this != &other) // zwei unterschiedliche Instanzen?
     {
         if (m_length != other.m_length)
         {
