@@ -10,6 +10,12 @@ public:
     Matrix(const T &A, const T &B, const T &C, const T &D);
     ~Matrix() = default;
 
+    //Addition und Subtraktion -> Operatoren definieren (+, -)
+    Matrix operator+(const Matrix &rhs) const; //rhs = right hand side
+    Matrix operator-(const Matrix &rhs) const;
+    Matrix operator+=(const Matrix &rhs);
+    Matrix operator-=(const Matrix &rhs);
+
     void print_matrix() const;
 
     T get_A() const;
@@ -38,6 +44,52 @@ template <typename T>
 Matrix<T>::Matrix(const T &A, const T &B, const T &C, const T &D)
     : m_A(A), m_B(B), m_C(C), m_D(D)
 {
+}
+
+template <typename T>
+Matrix<T> Matrix<T>::operator+(const Matrix &rhs) const
+{
+    auto result = Matrix{};
+    result.set_A(this->get_A() + rhs.get_A());
+    result.set_B(this->get_B() + rhs.get_B());
+    result.set_C(this->get_C() + rhs.get_C());
+    result.set_D(this->get_D() + rhs.get_D());
+
+    return result;
+}
+
+template <typename T>
+Matrix<T> Matrix<T>::operator-(const Matrix &rhs) const
+{
+    auto result = Matrix{};
+    result.set_A(this->get_A() - rhs.get_A());
+    result.set_B(this->get_B() - rhs.get_B());
+    result.set_C(this->get_C() - rhs.get_C());
+    result.set_D(this->get_D() - rhs.get_D());
+
+    return result;
+}
+
+template <typename T>
+Matrix<T> Matrix<T>::operator+=(const Matrix &rhs)
+{
+    this->set_A(this->get_A() + rhs.get_A());
+    this->set_B(this->get_B() + rhs.get_B());
+    this->set_C(this->get_C() + rhs.get_C());
+    this->set_D(this->get_D() + rhs.get_D());
+
+    return *this;
+}
+
+template <typename T>
+Matrix<T> Matrix<T>::operator-=(const Matrix &rhs)
+{
+    this->set_A(this->get_A() - rhs.get_A());
+    this->set_B(this->get_B() - rhs.get_B());
+    this->set_C(this->get_C() - rhs.get_C());
+    this->set_D(this->get_D() - rhs.get_D());
+
+    return *this;
 }
 
 template <typename T>
