@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/much1/Documents/ComputerVision/UdemyCPP/UdemyCpp/ComputerGame8/OwnSolution",
-      "program": "c:/Users/much1/Documents/ComputerVision/UdemyCPP/UdemyCpp/ComputerGame8/OwnSolution/build/Debug/outDebug",
+      "cwd": "c:/Users/much1/Documents/ComputerVision/UdemyCPP/UdemyCpp/CodingProject3/_Start",
+      "program": "c:/Users/much1/Documents/ComputerVision/UdemyCPP/UdemyCpp/CodingProject3/_Start/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

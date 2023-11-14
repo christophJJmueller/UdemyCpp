@@ -16,5 +16,8 @@ int main()
     auto m4 = m3 - m2;
     m4.print_matrix();
 
+    auto m5 = m4 * m1;
+    m5.print_matrix();
+
     return 0;
 }
