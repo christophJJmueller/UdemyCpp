@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/much1/Documents/ComputerVision/UdemyCPP/UdemyCpp/08_STL",
-      "program": "c:/Users/much1/Documents/ComputerVision/UdemyCPP/UdemyCpp/08_STL/build/Debug/outDebug",
+      "cwd": "c:/Users/much1/Documents/ComputerVision/UdemyCPP/UdemyCpp/11_Threads/_Exercise/Solution",
+      "program": "c:/Users/much1/Documents/ComputerVision/UdemyCPP/UdemyCpp/11_Threads/_Exercise/Solution/build/Release/outRelease",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

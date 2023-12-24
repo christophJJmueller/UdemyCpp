@@ -250,8 +250,12 @@
     "/w44265",
     "/w14928"
   ],
-  "C_Cpp_Runner.compilerArgs": [],
-  "C_Cpp_Runner.linkerArgs": [],
+  "C_Cpp_Runner.compilerArgs": [
+    "-pthread"
+  ],
+  "C_Cpp_Runner.linkerArgs": [
+    "-pthread"
+  ],
   "C_Cpp_Runner.includePaths": [],
   "C_Cpp_Runner.includeSearch": [
     "*",
@@ -287,7 +291,7 @@
   "doxdocgen.generic.paramTemplate": "@param {param} ",
   "doxdocgen.generic.returnTemplate": "@return",
   "doxdocgen.generic.includeTypeAtReturn": false,
-  "C_Cpp_Runner.msvcBatchPath": "",
+  "C_Cpp_Runner.msvcBatchPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Auxiliary/Build/vcvarsall.bat",
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "workbench.editor.empty.hint": "hidden"
 }

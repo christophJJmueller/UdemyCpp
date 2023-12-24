@@ -65,6 +65,14 @@ template <typename T>
 T parallel_sum(std::vector<T> &vec)
 {
     T final_sum = 0;
+    auto split_size = vec.size() / NUM_THREADS;
+    auto vectors = std::array<std::vector<std::int32_t, split_size>, NUM_THREADS>{};
+
+    for (std::uint32_t i = 0; i < NUM_THREADS; i++)
+    {
+        vectors[0]
+    }
+
 
 
     return final_sum;
